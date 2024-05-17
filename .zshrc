@@ -130,10 +130,10 @@ gfc() {
     fi
 }
 
-alias sd='cd "$(find -u --type d --exclude node_modules --color=auto | fzf)"'
-alias sdr='cd ~ && cd "$(find -u --type d --exclude node_modules --color=auto | fzf)"'
-alias sf='nvim "$(find -u --type f --exclude node_modules --color=auto | fzf)"'
-alias sfr='cd ~ && nvim "$(find -u --type f --exclude node_modules --color=auto | fzf)"'
+alias sd='cd "$(fd -u --type d --exclude node_modules --color=auto | fzf)"'
+alias sdr='cd ~ && cd "$(fd -u --type d --exclude node_modules --color=auto | fzf)"'
+alias sf='nvim "$(fd -u --type f --exclude node_modules --color=auto | fzf)"'
+alias sfr='cd ~ && nvim "$(fd -u --type f --exclude node_modules --color=auto | fzf)"'
 alias sdnvim='sd && nvim'
 
 # pnpm
